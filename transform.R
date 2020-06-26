@@ -1,4 +1,4 @@
-# script for reading, transforming, and exporting data, will save in current working directory
+# script for read, transforming, and exporting data, will save in current working directory
 
 transform <- function(filepath, data, name, crs, driver) {
   library(rgdal)
@@ -8,4 +8,4 @@ transform <- function(filepath, data, name, crs, driver) {
   writeOGR(data, ".", name, driver=driver) 
 }
 
-transform("[enter file path of where data is stored]","[enter file name of data]","[enter file name of data that will be exported]","[specify proj4 string, e.g., +proj=longlat +datum=WGS84]","[specify driver, the data format, e.g., ESRI Shapefile]")
+transform(" "," ","ccs_longlat","+proj=longlat +datum=WGS84","ESRI Shapefile")
